@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felices 4 meses❤️</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Arial,Helvetica,sans-serif;
+ color:#5b3043;
+ background:
+ radial-gradient(circle at 15% 10%,#ffd7e5 0 8%,transparent 30%),
+ radial-gradient(circle at 85% 20%,#ffe5ef 0 8%,transparent 28%),
+ linear-gradient(135deg,#fff8fb,#ffe9f1,#fff);
+ min-height:100vh;
+}
+.hero{
+ min-height:72vh;
+ display:flex;flex-direction:column;justify-content:center;align-items:center;
+ text-align:center;padding:70px 24px;
+}
+.tag{display:inline-block;background:#fff;padding:10px 20px;border-radius:50px;color:#e54d7a;font-weight:bold;letter-spacing:2px;box-shadow:0 8px 30px #9b496020}
+h1{font-size:clamp(3.2rem,8vw,7rem);line-height:.95;margin:25px 0 18px;color:#e84e7d;text-shadow:0 10px 30px #e84e7d35}
+.hero p{font-size:clamp(1rem,2vw,1.3rem);max-width:720px;line-height:1.7;margin:0 0 30px}
+button{border:0;padding:15px 25px;border-radius:50px;background:linear-gradient(135deg,#e94f7d,#ff86a6);color:white;font-size:1rem;cursor:pointer;box-shadow:0 10px 25px #e94f7d40;transition:.25s}
+button:hover{transform:translateY(-3px)}
+.container{width:min(1100px,92%);margin:auto}
+.card{
+ background:#ffffffdd;border:1px solid #fff;border-radius:30px;
+ padding:clamp(24px,4vw,45px);margin:28px 0;
+ box-shadow:0 18px 55px #7e304218;backdrop-filter:blur(10px)
+}
+h2{text-align:center;color:#dd4c77;font-size:clamp(1.7rem,3vw,2.4rem);margin:0 0 25px}
+.message p{font-size:clamp(1rem,1.5vw,1.12rem);line-height:1.85;text-align:center;max-width:850px;margin:12px auto}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.photo{background:#fff;padding:11px;border-radius:20px;box-shadow:0 10px 30px #7e304220;transition:.3s}
+.photo:hover{transform:translateY(-8px) rotate(0)}
+.photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}
+.photo p{text-align:center;margin:13px 5px 5px}
+.note{text-align:center;color:#967080;font-size:.85rem;margin-top:20px}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.step{display:flex;gap:15px;padding:20px;background:#fff7fa;border-radius:20px}
+.number{flex:0 0 45px;height:45px;border-radius:50%;background:#e94f7d;color:white;display:grid;place-items:center;font-weight:bold}
+.step h3{margin:0 0 7px;color:#613145}.step p{margin:0;line-height:1.6}
+.final{text-align:center;padding:80px 20px}
+.final .heart{font-size:70px;animation:beat 1.3s infinite}
+.final p{font-size:1.25rem}
+#surprise{display:none;max-width:650px;margin:25px auto 0;background:white;border-radius:20px;padding:25px;box-shadow:0 10px 30px #7e304220}
+#surprise.show{display:block}
+footer{text-align:center;padding:35px;color:#987080}
+.floating{position:fixed;bottom:-50px;pointer-events:none;animation:float 6s linear forwards;z-index:20}
+@keyframes float{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+@keyframes beat{50%{transform:scale(1.16)}}
+@media(max-width:800px){
+ .gallery,.timeline{grid-template-columns:1fr}
+ .hero{min-height:65vh;padding:55px 18px}
+}
+@media(max-width:480px){
+ h1{font-size:3.3rem}
+ .container{width:94%}
+ .card{border-radius:22px}
+ .photo img{aspect-ratio:1/1}
+ .final{padding:60px 10px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+ <div class="tag">❤️ PARA TI ❤️</div>
+ <h1>Felices 4 meses, mi amor❤️</h1>
+ <p>Gracias por cada momento que hemos y pasamos juntos, me encantas mucho, te amo Camila ❤️.</p>
+ <button id="musicButton">🎵 Reproducir nuestra música</button>
+ <audio id="music" loop>
+   <source src="Golpe A Golpe - Estar Enamorado [Video Oficial] ® (mp3cut.net).mp3" type="audio/mpeg">
+ </audio>
+</section>
+
+<main class="container">
+
+<section class="card message">
+ <h2>💌 Un pequeño mensaje para ti</h2>
+ <p>Hoy cumplimos <b>4 meses</b> y quería hacer algo diferente para recordarte lo importante que eres para mí.</p>
+ <p>Tal vez parezca una pagina algo sencilla, pero lo hice pensando especialmente en ti. ❤️</p>
+ <p>Gracias de verdad amor por estar conmigo, por los momentos bonitos que pasamos y por todos esos pequeños detalles que hacen sea especial nuestra historia.</p>
+</section>
+
+<section class="card">
+ <h2>📸 Nuestros recuerdos</h2>
+ <div class="gallery">
+  <div class="photo"><img src="foto1.jpeg" alt="Nuestro recuerdo 1"><p>Recuerdo ese dia que me quise tomar una foto contigo jsjssjsjs ❤️</p></div>
+  <div class="photo"><img src="foto2.jpeg" alt="Nuestro recuerdo 2"><p>Amo cuando sonries, recuerdo cuando te robe esta foto 😅 💕</p></div>
+  <div class="photo"><img src="foto3.jpeg" alt="Nuestro recuerdo 3"><p>Ya, pero te amo vaga jjajajajaja 💗</p></div>
+ </div>
+ <p class="note"></p>
+</section>
+
+<section class="card">
+ <h2>✨ 4 meses de nosotros</h2>
+ <div class="timeline">
+  <div class="step"><div class="number">01</div><div><h3>El comienzo</h3><p>El día en que te dije lo que sentia estuve muy nervioso, aunque aun sigo nervioso, pero me gusta demostrarte lo que siento por tí.</p></div></div>
+  <div class="step"><div class="number">02</div><div><h3>Los pequeños detalles</h3><p>Mensajes, risas, bromas, conversaciones y momentos que se quedan conmigo.</p></div></div>
+  <div class="step"><div class="number">03</div><div><h3>Lo que hemos construido</h3><p>Cuatro meses llenos de recuerdos a tu lado que hacen aprecio mucho.</p></div></div>
+  <div class="step"><div class="number">04</div><div><h3>Lo que viene</h3><p>Ojalá sigamos sumando muchos momentos bonitos juntos, quiero mucho eso. ❤️</p></div></div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="heart">❤️</div>
+ <h2>¿Seguimos escribiendo nuestra historia?</h2>
+ <p>Felices 4 meses, mi amor.</p>
+ <button id="surpriseButton">💖 Tengo una sorpresa</button>
+ <div id="surprise">Te amo muchísimo bebé. Gracias por formar parte de mi vida. 🥹❤️</div>
+</section>
+
+</main>
+<footer>Hecho con ❤️ especialmente para ti</footer>
+
+<script>
+const music=document.getElementById("music");
+const musicButton=document.getElementById("musicButton");
+musicButton.onclick=()=>{
+ if(music.paused){music.play();musicButton.textContent="⏸️ Pausar nuestra música";}
+ else{music.pause();musicButton.textContent="🎵 Reproducir nuestra música";}
+};
+const surprise=document.getElementById("surprise");
+document.getElementById("surpriseButton").onclick=()=>{
+ surprise.classList.toggle("show");
+};
+function makeHeart(){
+ const h=document.createElement("div");
+ h.className="floating";
+ h.textContent=["❤️","💕","💗","💖","💘"][Math.floor(Math.random()*5)];
+ h.style.left=Math.random()*100+"vw";
+ h.style.fontSize=(16+Math.random()*22)+"px";
+ h.style.animationDuration=(4+Math.random()*4)+"s";
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),8500);
+}
+setInterval(makeHeart,700);
+</script>
+</body>
+</html>
